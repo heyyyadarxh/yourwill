@@ -1,1 +1,228 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #6c63ff;
+}
+
+/* ===================== */
+/* INDEX PAGE */
+/* ===================== */
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #c3ecff, #e0c3fc);
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #4a3aff;
+    margin-bottom: 20px;
+}
+
+/* SEARCH */
+.search-box {
+    margin: 20px auto;
+}
+
+.search-box input {
+    width: 60%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* CATEGORIES */
+.categories {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.cat {
+    display: inline-block;
+    padding: 12px 18px;
+    margin: 10px;
+    background: white;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cat:hover {
+    transform: scale(1.08);
+    background: #6c63ff;
+    color: white;
+}
+
+/* CARDS */
+.container {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 250px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* ===================== */
+/* ORDER PAGE */
+/* ===================== */
+
+.order-container {
+    padding: 40px;
+    text-align: center;
+}
+
+/* 3D PREVIEW */
+.order-container .preview-container {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    margin: 30px auto;
+}
+
+.order-container .preview-bottle-3d {
+    width: 100%;
+    height: 100%;
+}
+
+.order-container .label {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 70px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.order-container .label p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* TEMPLATES */
+.order-container .templates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.order-container .template-card {
+    width: 120px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.order-container .template-card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+.order-container .template-card:hover {
+    transform: scale(1.05);
+}
+
+.order-container .template-card.selected {
+    border: 3px solid #6c63ff;
+}
+
+/* FORM */
+.order-container form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    margin: 40px auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.order-container input,
+.order-container select,
+.order-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.order-container button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(135deg, #6c63ff, #8360c3);
+    color: white;
+    cursor: pointer;
+}
+
+.order-container button:hover {
+    opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #777;
+}
